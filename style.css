@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+input, textarea {
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background: url('asset/foto2.jpg')no-repeat;
+    background-color:khaki ;
+    background-blend-mode: multiply;
+    opacity: .8;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+    text-align: center;
+}
+
+header .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper h1 {
+    color:darkorange;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-shadow: 0 4px 0px black;
+    margin-bottom: 40px;
+}
+
+header .wrapper img {
+    border-radius: 50%;
+    border: 7px solid darkorange;
+    box-shadow: 0 28px 26px 0px rgba(0,0,0,.7);
+    width: 30%;
+    transition: transform .5s ease-out;
+    cursor: pointer;
+}
+
+header .wrapper img:hover {
+    transform: scale(1.1);
+}
+
+header .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+header .wrapper ul li a {
+    margin-right: 15px;
+    text-decoration: none;
+    color:darkorange;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 4px 0px black;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+header .wrapper ul li a:hover {
+    border-bottom: 5px solid yellow;
+}
+
+.tentang-saya {
+    background: #feda5f;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.tentang-saya .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.tentang-saya .wrapper p {
+    text-shadow: 0 4px 0px white;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 35px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.tentang-saya .wrapper a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.skill {
+    background: #ffc711;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill .wrapper {
+    width: 80%;
+}
+
+.skill .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.skill .wrapper h5 {
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 4px 0px black;
+    font-size: 18px;
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.skill .wrapper .background {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+}
+
+.skill .wrapper .background .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: #649cfc;
+    z-index: 2;
+}
+
+.skill .wrapper .html {
+    width: 30%;
+}
+
+.skill .wrapper .css {
+    width: 40%;
+}
+
+.skill .wrapper .coreldraw {
+    width: 85%;
+}
+
+.skill .wrapper .english {
+    width: 75%;
+}
+
+.karya {
+    background: #feda5f;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.karya .wrapper {
+    padding: 50px;
+}
+
+.karya .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.karya .wrapper .wrapper-karya {
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.wrapper-karya a {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    text-shadow: 0 4px 0px white;
+    font-size: 20px;
+}
+
+.contact {
+    background: #ffc711;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .wrapper h2 {
+    text-shadow: 0 4px 0px black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 7px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.contact .wrapper-contact input, .contact .wrapper-contact textarea {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 15px;
+    margin-bottom: 18px;
+    font-family: sans-serif;
+}
+
+.contact .wrapper-contact textarea {
+    height: 120px;
+}
+
+.contact .wrapper-contact input[type="submit"] {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 11px;
+    padding: 10px 60px;
+    border: 5px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #feda5f;
+    display: inline-block;
+    padding-bottom: 23px;
+    width: auto;
+    cursor: pointer;
+    transition: all .5s ease-out;
+
+}
+
+.contact .wrapper-contact input[type="submit"]:hover {
+    background: #f4cf53;
+    box-sizing: 0 15px 25px -5px rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
